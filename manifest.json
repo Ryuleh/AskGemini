@@ -1,0 +1,25 @@
+{
+  "name": "AskGPT Extension",
+  "description": "Ask questions on anywhere and get answers quick",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["contextMenus", "sidePanel"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+
+  "side_panel": {
+    "default_path": "sidePanel.html"
+  },
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  }
+}
