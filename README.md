@@ -1,10 +1,10 @@
-Features in test:
+Task Assignment:
 
-1. Output any highlighted text on any webpage in service worker log
-2. Access side panel using context menu
-3. Talking between background script and service worker
+1. Update UI for Chatbox Page 
+2. Create text bubbles for user and Gemini
+3. Send API request to Gemini and extract reply
+4. Display text bubbles on Chatbox Page
+5. Extract highlighted content to be displayed on text input section of the chatbox
 
-What to do next: 
-1. Connect with Gemini API
-2. More UI implementation for side panel
-3. Figureo out what is the best way to store response
+
+(Talk to Mandy for each task's specifcations)
