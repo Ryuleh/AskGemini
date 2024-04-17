@@ -1,4 +1,4 @@
-const GEMINI_API_KEY = "AIzaSyBUUoCnG63V9BS3GxxDIpqT3CFC7_meODI";
+const GEMINI_API_KEY = "";
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`;
 
 document.getElementById("input-box").addEventListener("keydown", (event) => {
