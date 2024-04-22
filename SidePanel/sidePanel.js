@@ -1,4 +1,4 @@
-const GEMINI_API_KEY = "";
+const GEMINI_API_KEY = "AIzaSyBDluKKJczAfrsD2WnngU4Uc5nHuZ3ZpCY";
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`;
 
 document.getElementById("input-box").addEventListener("keydown", (event) => {
@@ -14,6 +14,17 @@ document.getElementById("input-box").addEventListener("keydown", (event) => {
          * 3. Display response on chatbox screen
         */
 
+        let chatbox = document.getElementById("chatbox");
+        let inputDiv = document.getElementById("div");
+        inputDiv.className = "input";
+        inputDiv.innerHTML = input;
+        chatbox.appendChild(inputDiv);
+
+
+
+        console.log()
+
+
         fetch(GEMINI_API_URL, {
             method: "POST",
             body: JSON.stringify({
@@ -22,7 +33,7 @@ document.getElementById("input-box").addEventListener("keydown", (event) => {
                   parts: [
                     {
                       //Here to insert request input
-                      text: "Hello can you teach me what 1+1 =?",
+                      text: input,
                     },
                   ],
                 },
@@ -36,6 +47,10 @@ document.getElementById("input-box").addEventListener("keydown", (event) => {
               //[*3: Here is the response]
               let response = result["candidates"][0]["content"]["parts"][0]["text"];
               console.log(response); 
+              let responseDiv = document.createElement("div");
+            responseDiv.className = "response";
+            responseDiv.innerText = response;
+            chatbox.appendChild(responseDiv);
             });
     }
 })
