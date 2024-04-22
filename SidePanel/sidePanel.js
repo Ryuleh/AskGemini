@@ -15,10 +15,11 @@ document.getElementById("input-box").addEventListener("keydown", (event) => {
         */
 
         let chatbox = document.getElementById("chatbox");
-        let inputDiv = document.getElementById("div");
+        let inputDiv = document.getElementById("input-box");
         inputDiv.className = "input";
-        inputDiv.innerHTML = input;
+        inputDiv.innerText = input;
         chatbox.appendChild(inputDiv);
+
 
 
 
