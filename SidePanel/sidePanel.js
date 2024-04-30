@@ -4,17 +4,24 @@ const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/
 document.getElementById("input-box").addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         event.preventDefault();
-
+        
         let input = document.getElementById("input-box").value; //extract input 
-        console.log(input); 
-
+        console.log(input);  //this is the user input 
         /**TODOs: 
          * 1. Display input on chatbox screen
          * 2. Send request to Gemini API and extract response
          * 3. Display response on chatbox screen
         */
+
         let inputContainer = document.getElementById("inputforchatbox");
-        inputContainer.textContent = input;
+        //Jamie: 
+        //This is a container that takes in questions and gives them their own
+        //div in the HTML
+        let questionContainer = document.createElement("div");
+        questionContainer.textContent = input;
+
+        inputContainer.appendChild(questionContainer);
+        
         fetch(GEMINI_API_URL, {
             method: "POST",
             body: JSON.stringify({
@@ -22,8 +29,9 @@ document.getElementById("input-box").addEventListener("keydown", (event) => {
                 {
                   parts: [
                     {
-                      //Here to insert request input
-                      text: input,
+                      //Kaua: 
+                      //Here to insert request input, which contains all the past convo history 
+                      text: inputContainer.textContent + input,
                     },
                   ],
                 },
