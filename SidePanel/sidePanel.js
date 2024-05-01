@@ -9,9 +9,9 @@ document.getElementById("input-box").addEventListener("keydown", async (event) =
     console.log(input); // this is the user input
 
     // Display input on chatbox screen
-    let questionContainer = document.createElement("div");
+    let questionContainer = document.createElement("div").innerHTML(input);
     questionContainer.textContent = input;
-    let chatboxContainer = document.getElementById("chatbox");
+    let chatboxContainer = document.getElementById("chatbox").innerText(input);
     chatboxContainer.appendChild(questionContainer);
 
     // Send request to Gemini API and extract response
