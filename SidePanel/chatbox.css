@@ -1,7 +1,8 @@
 #chatbox {
     margin: 0;
     height: 630px; 
-    color: white; 
+    color: white;
+    overflow-y: scroll; 
 }
 
 #header {
@@ -12,6 +13,7 @@
 #body {
     height: 75%;
     background-color: rgb(39, 39, 39);
+    overflow-y: scroll;
 }
 
 #input {
