@@ -69,4 +69,28 @@ document.getElementById("input-box").addEventListener("keydown", (event) => {
 
     document.getElementById("input-box").value = "";
   }
+
+document.addEventListener('mouseup', function() {
+  let selectedText = getSelectedText();
+  if (selectedText.length > 0) { // Check if there's any selected text
+    document.getElementById('input-box').value = selectedText; // Set the input box value to the selected text
+  }
+});
+
+function getSelectedText() {
+  if (window.getSelection) {
+    return window.getSelection().toString();
+  } else if (document.selection && document.selection.type !== "Control") {
+    return document.selection.createRange().text;
+  }
+  return "";
+}
+
+// Optional: Clear the selection after setting the input box value
+document.addEventListener('mousedown', function() {
+  window.getSelection().removeAllRanges();
+});
+
+
+
 });
