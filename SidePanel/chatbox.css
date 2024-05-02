@@ -2,6 +2,7 @@
     margin: 0;
     height: 630px; 
     color: white; 
+    overflow-y: scroll;
 }
 
 #header {
@@ -12,15 +13,31 @@
 #body {
     height: 75%;
     background-color: rgb(39, 39, 39);
+    overflow-y: scroll;
 }
 
 #input {
     height: 15%;
     background-color: rgb(70, 70, 70);
-    text-align: center;
 }
 
 #input-box {
     width: 90%; 
     height: 70px; 
+}
+
+#input-for-chatbox {
+    justify-content: right;
+    text-align: right;
+    border-radius: 30px;
+    background-color: rgb(83, 83, 191);
+    margin: 20px;
+}
+
+#output-for-chatbox {
+    justify-content: left;
+    text-align: left;
+    border-radius: 30px;
+    background-color: rgb(140, 63, 208);
+    margin: 20px;
 }
