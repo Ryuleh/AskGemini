@@ -27,6 +27,7 @@ document.getElementById("input-box").addEventListener("keydown", (event) => {
     questionContainer.textContent = input;
     questionContainer.setAttribute("id", "input-for-chatbox");
     body.appendChild(questionContainer);
+    body.scrollTop = body.scrollHeight;
 
     //body.setAttribute("id", "input-for-chatbox");
     
@@ -59,9 +60,10 @@ document.getElementById("input-box").addEventListener("keydown", (event) => {
         let responseContainer = document.createElement("div");
         responseContainer.setAttribute("id", "output-for-chatbox");
         responseContainer.textContent = response;
-        //let outputContainer = document.getElementById("output-for-chatbox");
+        //let outputContainer = document.getElemen  tById("output-for-chatbox");
         //outputContainer.appendChild(responseContainer);
         body.appendChild(responseContainer);
+        body.scrollTop = body.scrollHeight;
       })
       .catch((error) => {
         console.log("Error: " + error);
