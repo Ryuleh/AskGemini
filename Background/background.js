@@ -14,8 +14,8 @@ chrome.runtime.onMessage.addListener(
 
   chrome.runtime.onInstalled.addListener(async () => {
       chrome.contextMenus.create({
-        id: 'OpenAskGPT',
-        title: "Open AskGPT",
+        id: 'OpenAskGemini',
+        title: "Open AskGemini",
         type: 'normal'
       });
   });
