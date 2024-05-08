@@ -1,6 +1,6 @@
 const GEMINI_API_KEY = ""; //Insert API key here
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`;
-
+//side
 document.getElementById("input-box").addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     event.preventDefault();
