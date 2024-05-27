@@ -15,7 +15,8 @@ Initial Proposal: https://docs.google.com/document/d/1BRiUQc50B4NmV6cwdvZni3Vj4N
 4. Finish up CSS + Highlighting feature
 
 ## What's next?
-1. Save and ogranize past conversations in folders
+1. Save and organize past conversations historys in folders
+2. Summerize conversations
 
 ## Credits: 
 Mentor: Mandy 
