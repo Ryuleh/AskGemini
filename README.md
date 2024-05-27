@@ -1,7 +1,7 @@
 ## SBRT Mentorship Project (Spring 2024) 
 The SBRT Mentorship aims to provide hands-on learning and development opportunities for aspiring students in the field. The project pairs experienced mentors with motivated mentees to collaborate on a real-world project over the course of a semester. The primary goal is to foster a learning environment where mentees can gain practical skills, insights, and experience through guided mentorship and teamwork. 
 
-## PROJECT: AskGPT Chrome Extension
+## PROJECT: AskGemini Chrome Extension
 Initial Proposal: https://docs.google.com/document/d/1BRiUQc50B4NmV6cwdvZni3Vj4NLMvQ_q8mFqSqepPOc/edit?usp=sharing
 
 ## Milestones
