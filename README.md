@@ -20,6 +20,7 @@ Initial Proposal: https://docs.google.com/document/d/1BRiUQc50B4NmV6cwdvZni3Vj4N
 
 ## Credits: 
 Mentor: Mandy 
+
 Mentees: Jerry, Jamie, Kaua, Hassan, Usman 
 
 
