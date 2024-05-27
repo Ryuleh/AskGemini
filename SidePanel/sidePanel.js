@@ -10,13 +10,7 @@ document.getElementById("input-box").addEventListener("keydown", (event) => {
 
     let input = document.getElementById("input-box").value; //extract input
     console.log(input); //this is the user input
-
     history += (input + "\n");
-    /**TODOs:
-     * 1. Display input on chatbox screen
-     * 2. Send request to Gemini API and extract response
-     * 3. Display response on chatbox screen
-     */
 
     //Jamie:
     //This is a container that takes in questions and gives them their own
@@ -30,8 +24,12 @@ document.getElementById("input-box").addEventListener("keydown", (event) => {
     body.scrollTop = body.scrollHeight;
 
     //body.setAttribute("id", "input-for-chatbox");
-    
     console.log(body.textContent + " " + input);
+
+    let questionContainer = document.createElement("input-for-chatbox");
+    let inputContainer = document.getElementById("input-for-chatbox");
+    inputContainer.appendChild(questionContainer);
+    questionContainer.textContent = input;
 
     fetch(GEMINI_API_URL, {
       method: "POST",
@@ -72,6 +70,7 @@ document.getElementById("input-box").addEventListener("keydown", (event) => {
     document.getElementById("input-box").value = "";
   }
 
+//Copy & paste response through highlighting
 document.addEventListener('mouseup', function() {
   let selectedText = getSelectedText();
   if (selectedText.length > 0) { // Check if there's any selected text
@@ -92,5 +91,4 @@ function getSelectedText() {
 document.addEventListener('mousedown', function() {
   window.getSelection().removeAllRanges();
 });
-
 });
