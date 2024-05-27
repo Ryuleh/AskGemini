@@ -1,27 +1,26 @@
-Task Assignment:
+## SBRT Mentorship Project (Spring 2024) 
+The SBRT Mentorship aims to provide hands-on learning and development opportunities for aspiring students in the field. The project pairs experienced mentors with motivated mentees to collaborate on a real-world project over the course of a semester. The primary goal is to foster a learning environment where mentees can gain practical skills, insights, and experience through guided mentorship and teamwork. 
 
-1. Update UI for Chatbox Page 
-2. Create text bubbles for user and Gemini
-3. Send API request to Gemini and extract reply
-4. Display text bubbles on Chatbox Page
-5. Extract highlighted content to be displayed on text input section of the chatbox
+## PROJECT: AskGPT Chrome Extension
+Initial Proposal: https://docs.google.com/document/d/1BRiUQc50B4NmV6cwdvZni3Vj4NLMvQ_q8mFqSqepPOc/edit?usp=sharing
+
+## Milestones
+1. Learn Javascript + chrome extension framework
+     - Lesson Slides:
+     - https://docs.google.com/presentation/d/1ARxvzxPG3LoIRSr1CShnUpBIe273NWZQm2hmZoQAadk/edit?usp=sharing
+     - https://docs.google.com/presentation/d/1iObI8K7nqhJyI5nSeY-YSkd2xFRxWwWoYqAw0xelZHo/edit?usp=sharing
+     - https://docs.google.com/presentation/d/1ai6oVhVjWCUUuUWNzx6ncR0mk8DA7Sg_cvEQdc8QV0Y/edit?usp=sharing
+2. Set up the chrome extension framework (Manifest.json, Sidepanel, and context manual)
+3. Integrate Google Gemini API 
+4. Finish up CSS + Highlighting feature
+
+## What's next?
+1. Save and ogranize past conversations in folders
+
+## Credits: 
+Mentor: Mandy 
+Mentees: Jerry, Jamie, Kaua, Hassan, Usman 
 
 
-(Talk to Mandy for each task's specifcations)
 
 
-How to access your Branch
-
-1. Clone the repo
-2. Open terminal and make sure you are located inside your folder
-3. Type: git checkout [Your first name]
-4. You should see a message 'Switch to a new branch '[Your first name]' on the terminal
-5. Start making any changes
-
-
-How to upload your change 
-
-1. Open terminal and make sure you are located inside your folder
-2. Type: git add .
-3. Type: git commit -m "Give it a message here inside the quotation"
-4. Type: git push
