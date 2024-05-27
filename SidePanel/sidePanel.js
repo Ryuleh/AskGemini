@@ -93,6 +93,4 @@ document.addEventListener('mousedown', function() {
   window.getSelection().removeAllRanges();
 });
 
-
-
 });
